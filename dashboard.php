@@ -1,20 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Basic -->
+     <!-- Basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 
-    <title>Dasboard</title> 
+    <title>Profile</title>  
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Porto - Responsive HTML5 Template">
+    <meta name="author" content="okler.net">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
     <!-- Web Fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
+    <!-- Vendor CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
 
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/theme-elements.css">
+    <link rel="stylesheet" href="css/theme-blog.css">
+    <link rel="stylesheet" href="css/theme-shop.css">
+    
+    <!-- Demo CSS -->
+
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="css/skins/default.css"> 
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="vendor/modernizr/modernizr.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <?php
