@@ -7,7 +7,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo.png">
+											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo-dark.png">
 										</a>
 									</div>
 								</div>
@@ -19,22 +19,22 @@
 											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="dashboard.php">
+														<a class="dropdown-item dropdown-toggle text-white" href="dashboard.php">
 															Dashboard
 														</a>
 													</li>
 													<li class="dropdown dropdown-mega">
-														<a class="dropdown-item dropdown-toggle" href="formproduk.php">
+														<a class="dropdown-item dropdown-toggle text-white" href="formproduk.php">
 															Product
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="transaksi.php">
+														<a class="dropdown-item dropdown-toggle text-white" href="transaksi.php">
 															Transaction
 														</a>
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="profile.php">
+														<a class="dropdown-item dropdown-toggle text-white" href="profile.php">
 															Users
 														</a>
 													</li>
@@ -48,7 +48,7 @@
 									</div>
 									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
 										<div class="nav-item dropdown">
-							              <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="img/usericon.svg" width="30px" >
+							              <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons-outlined text-white fs-2">account_circle</span>
 							              </a>
 							              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 							                <a class="dropdown-item" href="#">Profile</a>
