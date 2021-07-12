@@ -265,7 +265,7 @@
       <div class="modal-body">
         <div class="row">
           <div class="col-6">
-            <img src="img/person.svg" style="width: 250px;">
+            <!-- <img src="img/person.svg" style="width: 250px;"> -->
             <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
           </div>
           <div class="col-6">
@@ -315,7 +315,7 @@
       <div class="modal-body">
         <div class="row">
           <div class="col-6">
-            
+            <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
           </div>
           <div class="col-6">
             <form>
