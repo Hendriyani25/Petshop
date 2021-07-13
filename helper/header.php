@@ -7,7 +7,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="img/logo-dark.png">
+											<img alt="Porto" width="100" height="48" data-sticky-width="82" data-sticky-height="40" src="assets/img/logo-dark.png">
 										</a>
 									</div>
 								</div>
@@ -24,7 +24,7 @@
 														</a>
 													</li>
 													<li class="dropdown dropdown-mega">
-														<a class="dropdown-item dropdown-toggle text-white" href="formproduk.php">
+														<a class="dropdown-item dropdown-toggle text-white" href="produk.php">
 															Product
 														</a>
 													</li>
@@ -48,11 +48,11 @@
 									</div>
 									<div class="header-nav-features header-nav-features-no-border header-nav-features-lg-show-border order-1 order-lg-2">
 										<div class="nav-item dropdown">
-							              <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons-outlined text-white fs-2">account_circle</span>
+							              <a class="nav-link" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="material-icons-outlined text-white fs-2">account_circle</span>
 							              </a>
 							              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-							                <a class="dropdown-item" href="#">Profile</a>
-							                <a class="dropdown-item" onclick= "window.location.href ='../login.html'">Logout</a>
+							                <a class="dropdown-item" href="editProfil.php">Profile</a>
+							                <a class="dropdown-item" onclick= "window.location.href ='login.php'">Logout</a>
 							              </div>
 							            </div>
 									</div>

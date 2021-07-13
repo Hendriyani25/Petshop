@@ -5,16 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 
-    <title>Profile</title>  
-
-    <meta name="keywords" content="HTML5 Template" />
-    <meta name="description" content="Porto - Responsive HTML5 Template">
-    <meta name="author" content="okler.net">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-
+    <title>User Management</title>
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
@@ -24,46 +15,37 @@
 
     <!-- Vendor CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="vendor/animate/animate.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.css">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/theme-elements.css">
-    <link rel="stylesheet" href="css/theme-blog.css">
-    <link rel="stylesheet" href="css/theme-shop.css">
-    
-    <!-- Demo CSS -->
-
-
-    <!-- Skin CSS -->
-    <link rel="stylesheet" href="css/skins/default.css"> 
-
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/theme-elements.css">
+    <link rel="stylesheet" href="assets/css/theme-blog.css">
+    <link rel="stylesheet" href="assets/css/theme-shop.css">
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
   </head>
   <body>
-    <?php
-    include 'header.php';
-    ?>
+    <?php include(__DIR__.'/helper/header.php' )?>
 
     <div class="container mt-4">
       <div class="card p-3">
         <div class="row">
           <div class="col-6">
-            <h4>User Management</h4>
+            <h4 class="text-muted fw-normal display-6 fs-4">User Management</h4>
           </div>
           <div class="col-6 text-end">
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalTambahUser"><span class="material-icons-outlined"></span>Tambah User</button>
+            <button type="button" class="btn btn-sm rounded-pill h-75 px-4 text-white" id="btnIjo" data-bs-toggle="modal" data-bs-target="#ModalTambahUser">
+              <span class="material-icons-outlined">person_add</span>
+              <span class="align-top">Tambah User</span></button>
           </div>
         </div>
 
@@ -94,147 +76,34 @@
         </div>
 
         <div class="table-responsive">
-          
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">Nama Pegawai</th>
-              <th scope="col">Email</th>
-              <th scope="col">Nomor Handphone</th>
-              <th scope="col">Username</th>
-              <th scope="col">Masuk Sistem</th>
-              <th scope="col">Aksi</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Pegawai A</td>
-              <td>pegawaia@gmail.com</td>
-              <td>08123456789</td>
-              <td>Pegawai.a</td>
-              <td>01 Juli 2021</td>
-              <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Nama Pegawai</th>
+                <th scope="col">Email</th>
+                <th scope="col">Nomor Handphone</th>
+                <th scope="col">Username</th>
+                <th scope="col">Masuk Sistem</th>
+                <th scope="col">Aksi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Pegawai A</td>
+                <td>pegawaia@gmail.com</td>
+                <td>08123456789</td>
+                <td>Pegawai.a</td>
+                <td>01 Juli 2021</td>
+                <td class="d-flex">
+                  <button type="button" class="btn px-2 py-1 me-1 text-white" id="btnBiru" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
 
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
+                  <button type="button" class="btn px-2 py-1 me-1 text-white" id="btnKuning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
 
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>Pegawai B</td>
-              <td>pegawaib@gmail.com</td>
-              <td>08123456789</td>
-              <td>Pegawai.b</td>
-              <td>01 Juli 2021</td>
-              <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
-
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
-
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>Pegawai C</td>
-              <td>pegawaic@gmail.com</td>
-              <td>08123456789</td>
-              <td>Pegawai.c</td>
-              <td>01 Juli 2021</td>
-              <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
-
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
-
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>Pegawai D</td>
-              <td>pegawaid@gmail.com</td>
-              <td>08123456789</td>
-              <td>Pegawai.d</td>
-              <td>01 Juli 2021</td>
-              <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
-
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
-
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>Pegawai E</td>
-              <td>pegawaie@gmail.com</td>
-              <td>08123456789</td>
-              <td>Pegawai.e</td>
-              <td>01 Juli 2021</td>
-              <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
-
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
-
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>Pegawai F</td>
-              <td>pegawaif@gmail.com</td>
-              <td>08123456789</td>
-              <td>Pegawai.f</td>
-              <td>01 Juli 2021</td>
-              <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
-
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
-
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>Pegawai G</td>
-              <td>pegawaig@gmail.com</td>
-              <td>08123456789</td>
-              <td>Pegawai.g</td>
-              <td>01 Juli 2021</td>
-              <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
-
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
-
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>Pegawai H</td>
-              <td>pegawaih@gmail.com</td>
-              <td>08123456789</td>
-              <td>Pegawai.h</td>
-              <td>01 Juli 2021</td>
-              <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
-
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
-
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
-              </td>
-            </tr>
-            <tr>
-              <td>Pegawai I</td>
-              <td>pegawaii@gmail.com</td>
-              <td>08123456789</td>
-              <td>Pegawai.i</td>
-              <td>01 Juli 2021</td>
-              <td>
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUbahUser"><i class="fa fa-edit"></i></button>
-
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalRincianUser"><i class="fa fa-search-plus"></i></button>
-
-                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
-              </td>
-            </tr>
-          </tbody>
-      </table>
+                  <button type="button" class="btn px-2 py-1 text-white" id="btnMerah" data-bs-toggle="modal" data-bs-target="#ModalHapusUser"><i class="fa fa-trash-alt"></i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
 
       <div class="row">
@@ -257,7 +126,7 @@
 
 <!-- Modal Tambah User -->
 <div class="modal fade" id="ModalTambahUser" tabindex="-1" aria-labelledby="TambahUser" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="TambahUser"><b>Tambah User</b></h5>
@@ -268,6 +137,12 @@
           <div class="col-6">
             <!-- <img src="img/person.svg" style="width: 250px;"> -->
             <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+            <!-- <div class="image-upload">
+              <label for="file-input">
+                <span class="material-icons-outlined">file_upload</span>
+              </label>
+
+              <input id="file-input" type="file" /></div> -->
           </div>
           <div class="col-6">
             <form>
@@ -298,8 +173,8 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <button type="button" class="btn btn-success">Simpan</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnMerah" data-bs-dismiss="modal">Batal</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnIjo">Simpan</button>
       </div>
     </div>
   </div>
@@ -307,7 +182,7 @@
 
 <!-- Modal Ubah User -->
 <div class="modal fade" id="ModalUbahUser" tabindex="-1" aria-labelledby="modalubah" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="modalubah"><b>Ubah User</b></h5>
@@ -343,8 +218,8 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <button type="button" class="btn btn-success">Simpan</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnMerah" data-bs-dismiss="modal">Batal</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnIjo">Simpan</button>
       </div>
     </div>
   </div>
@@ -352,7 +227,7 @@
 
 <!-- Modal Hapus User-->
 <div class="modal fade" id="ModalHapusUser" tabindex="-1" aria-labelledby="ModalHapus" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="ModalHapus"><b>Hapus User</b></h5>
@@ -388,8 +263,8 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <button type="button" class="btn btn-warning">Hapus</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnMerah">Batal</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnKuning">Hapus</button>
       </div>
     </div>
   </div>
@@ -398,7 +273,7 @@
 
 <!-- Modal Rincian User-->
 <div class="modal fade" id="ModalRincianUser" tabindex="-1" aria-labelledby="RincianUser" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="RincianUser"><b>Rincian User</b></h5>
@@ -429,51 +304,16 @@
               <div class="mb-1">
                 <input type="text" class="form-control" placeholder="Pegawai">
               </div>
-              <button type="button" class="btn btn-secondary float-end" data-bs-dismiss="modal">Keluar</button>
             </form>
+            <div class="modal-footer">
+              <button type="button" class="btn rounded-pill px-3 btn-sm text-white float-end" id="btnMerah" data-bs-dismiss="modal">Keluar</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        
     </div>
   </div>
 </div>
-
-    <div class="container">
-      <div class="card mt-4">
-        <div class="row m-3" >
-          <div class="col-md-5 text-center">
-            <img src="img/person.svg" style="width: 250px;">
-            <h4 class="">Nama Pegawai</h4>
-            <p>pegawai@mail.com</p>
-            <p>08123456789  </p>
-          </div>
-          <div class="col-md-7">
-            <h4>Edit Profile</h4>
-            <form>
-              <div class="mb-2">
-                <input type="text" class="form-control" placeholder="Nama Pegawai">
-              </div>
-              <div class="mb-2">
-                <input type="textx" class="form-control" placeholder="pegawai@email.com">
-              </div>
-              <div class="mb-2">
-                <input type="textx" class="form-control" placeholder="08123456789">
-              </div>
-              <div class="mb-2">
-                <input type="textx" class="form-control" placeholder="Ubah password">
-              </div>
-              <div class="mb-2">
-                <input type="textx" class="form-control" placeholder="Konfirmasi password">
-              </div>
-            </form>
-              <button type="button" class="btn btn-success">Simpan</button>
-              <button type="button" class="btn btn-danger">Batal</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
  <!-- Vendor -->
     <script src="vendor/jquery/jquery.min.js"></script>

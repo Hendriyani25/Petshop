@@ -12,8 +12,8 @@
     <meta name="author" content="okler.net">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
@@ -23,37 +23,25 @@
 
     <!-- Vendor CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="vendor/animate/animate.min.css">
-    <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="assets/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.min.css">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/theme.css">
-    <link rel="stylesheet" href="css/theme-elements.css">
-    <link rel="stylesheet" href="css/theme-blog.css">
-    <link rel="stylesheet" href="css/theme-shop.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
     
-    <!-- Demo CSS -->
-
-
-    <!-- Skin CSS -->
-    <link rel="stylesheet" href="css/skins/default.css"> 
-
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
   </head>
   <body>
-    <?php
-    include 'header.php';
-    ?>
+     <?php include(__DIR__.'/helper/header.php' )?>
 
     <div class="container mt-4">
       <div class="card p-3">
@@ -62,7 +50,9 @@
             <h4>Transaction</h4>
           </div>
           <div class="col-6 text-end">
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#ModalTambahTransaksi"><span class="material-icons-outlined"></span>Tambah Transaksi</button>
+            <button type="button" class="btn btn-sm text-white rounded-pill h-75 px-4" data-bs-toggle="modal" data-bs-target="#ModalTambahTransaksi" id="btnIjo">
+              <span class="material-icons-outlined">add_shopping_cart</span>
+              <span class="align-top">Tambah Transaksi</span></button>
           </div>
         </div>
 
@@ -112,11 +102,11 @@
                 <td>Rp.1.000.000</td>
                 <td>01 Juli 2021</td>
                 <td>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
+                  <button type="button" class="btn px-2 py-1 text-white" id="btnBiru" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
 
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
+                  <button type="button" class="btn px-2 py-1 text-white" id="btnKuning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
 
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
+                 <button type="button" class="btn px-2 py-1 text-white" id="btnIjo" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fas fa-print"></i></button>
                 </td>
               </tr>
               <tr>
@@ -126,103 +116,11 @@
                 <td>Rp.1.000.000</td>
                 <td>22 Maret 2021</td>
                 <td>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
+                  <button type="button" class="btn px-2 py-1 text-white" id="btnBiru" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
 
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
+                  <button type="button" class="btn px-2 py-1 text-white" id="btnKuning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
 
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
-                </td>
-              </tr><tr>
-                <td>RCP/07/21/0003</td>
-                <td>Pelanggan C</td>
-                <td>Pegawai C</td>
-                <td>Rp.1.000.000</td>
-                <td>17 Agustus 2021</td>
-                <td>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
-
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
-
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
-                </td>
-              </tr>
-              <tr>
-                <td>RCP/07/21/0004</td>
-                <td>Pelanggan D</td>
-                <td>Pegawai D</td>
-                <td>Rp.1.000.000</td>
-                <td>12 Januari 2021</td>
-                <td>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
-
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
-
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
-                </td>
-              </tr><tr>
-                <td>RCP/07/21/0005</td>
-                <td>Pelanggan E</td>
-                <td>Pegawai E</td>
-                <td>Rp.1.000.000</td>
-                <td>07 Februari 2021</td>
-                <td>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
-
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
-
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
-                </td>
-              </tr><tr>
-                <td>RCP/07/21/0006</td>
-                <td>Pelanggan F</td>
-                <td>Pegawai F</td>
-                <td>Rp.1.000.000</td>
-                <td>13 Mei 2021</td>
-                <td>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
-
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
-
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
-                </td>
-              </tr><tr>
-                <td>RCP/07/21/0007</td>
-                <td>Pelanggan G</td>
-                <td>Pegawai G</td>
-                <td>Rp.1.000.000</td>
-                <td>12 September 2021</td>
-                <td>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
-
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
-
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
-                </td>
-              </tr><tr>
-                <td>RCP/07/21/0008</td>
-                <td>Pelanggan H</td>
-                <td>Pegawai H</td>
-                <td>Rp.1.000.000</td>
-                <td>01 Juli 2021</td>
-                <td>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
-
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
-
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
-                </td>
-              </tr><tr>
-                <td>RCP/07/21/0009</td>
-                <td>Pelanggan I</td>
-                <td>Pegawai I</td>
-                <td>Rp.1.000.000</td>
-                <td>19 Oktober 2021</td>
-                <td>
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalubahproduct"><i class="fa fa-edit"></i></button>
-
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalrincianproduct"><i class="fa fa-search-plus"></i></button>
-
-                  <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
+                  <button type="button" class="btn px-2 py-1 text-white" id="btnMerah" data-bs-toggle="modal" data-bs-target="#modalhapusproduct"><i class="fa fa-trash-alt"></i></button>
                 </td>
               </tr>
             </tbody>
@@ -249,7 +147,7 @@
 
 <!-- Modal Tambah Transaksi -->
 <div class="modal fade" id="ModalTambahTransaksi" tabindex="-1" aria-labelledby="ModalTambah" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="ModalTambah"><b>Tambah Transaksi</b></h5>
@@ -284,10 +182,10 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <button type="button" class="btn btn-warning">Pratinjau</button>
-        <button type="button" class="btn btn-primary">Cetak</button>
-        <button type="button" class="btn btn-success">Simpan</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnMerah" data-bs-dismiss="modal">Batal</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnKuning">Pratinjau</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnBiru">Cetak</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnIjo">Simpan</button>
       </div>
     </div>
   </div>
@@ -295,7 +193,7 @@
 
 <!-- Modal Ubah Product -->
 <div class="modal fade" id="modalubahproduct" tabindex="-1" aria-labelledby="modalubah" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="modalubah"><b>Ubah Transaksi</b></h5>
@@ -330,17 +228,17 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <button type="button" class="btn btn-warning">Pratinjau</button>
-        <button type="button" class="btn btn-primary">Cetak</button>
-        <button type="button" class="btn btn-success">Simpan</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnMerah" data-bs-dismiss="modal">Batal</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnKuning">Pratinjau</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnBiru">Cetak</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnIjo">Simpan</button>
       </div>
     </div>
   </div>
 </div>
 
 <!-- Modal Hapus Product-->
-<div class="modal fade" id="modalhapusproduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal fade" id="modalhapusproduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -376,19 +274,17 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
-        <button type="button" class="btn btn-warning">Pratinjau</button>
-        <button type="button" class="btn btn-primary">Cetak</button>
-        <button type="button" class="btn btn-success">Simpan</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnMerah">Batal</button>
+        <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnKuning">Hapus</button>
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
 <!-- Modal Rincian Transaksi-->
 <div class="modal fade" id="modalrincianproduct" tabindex="-1" aria-labelledby="rincianproduct" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="rincianproduct"><b>Rincian Transaksi</b></h5>
@@ -417,17 +313,19 @@
           </div>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-warning">Pratinjau</button>
-        <button type="button" class="btn btn-primary">Cetak</button>
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
+      <div class="modal-body">
+        <div class="float-end">
+          <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnKuning">Pratinjau</button>
+          <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnBiru">Cetak</button>
+          <button type="button" class="btn rounded-pill px-3 btn-sm text-white" id="btnMerah" data-bs-dismiss="modal">Keluar</button>
+        </div><br><hr>
         
-        <div class="row">
+        <div class="row mt-3">
           <div class="col-8">
             Ditambahkan oleh pegawai A pada pukul 07.00 WIB,3 Juli 2021
           </div>
           <div class="col-4">
-            <a href="#"><button class="btn btn-secondary">Rincian Selengkapnya</button></a>
+            <a href="#"><button class="btn btn-secondary btn-sm rounded-pill px-3 btn-sm text-white float-end">Rincian Selengkapnya</button></a>
           </div>
         </div>
       </div>
@@ -435,9 +333,6 @@
   </div>
 </div>
 
-  <div class="col-2"></div>
-  </div>
-</div>
 
 <!-- note 
 1. css ga kebaca
